@@ -131,40 +131,41 @@ def add_time(start, duration, day=None):  # sourcery no-metrics
     # f"{new_time_hour}:{new_time_minute:02}{' PM' if (new_time_hour_in_24hr >= 12) else ' AM'}{print_format}")
 
 
-##### WORKING TEST BENCH AREA #####
-add_time("8:16 PM", "466:02", "tuesday")
-# Returns: 6:18 AM, Monday (20 days later)
+###### WORKING TEST BENCH AREA ######
+if __name__ == '__main__':
+    add_time("8:16 PM", "466:02", "tuesday")
+    # Returns: 6:18 AM, Monday (20 days later)
 
-add_time("2:59 AM", "24:00", "saturDay")
-# Returns: 2:59 AM, Sunday (next day)
+    add_time("2:59 AM", "24:00", "saturDay")
+    # Returns: 2:59 AM, Sunday (next day)
 
-add_time("3:00 PM", "3:10")
-# Returns: 6:10 PM
- 
-add_time("11:30 AM", "2:32", "Monday")
-# Returns: 2:02 PM, Monday
- 
-add_time("11:43 AM", "00:20")
-# Returns: 12:03 PM
- 
-add_time("10:10 PM", "3:30")
-# Returns: 1:40 AM (next day)
- 
-add_time("11:43 PM", "24:20", "tueSday")
-# Returns: 12:03 AM, Thursday (2 days later)
+    add_time("3:00 PM", "3:10")
+    # Returns: 6:10 PM
+    
+    add_time("11:30 AM", "2:32", "Monday")
+    # Returns: 2:02 PM, Monday
+    
+    add_time("11:43 AM", "00:20")
+    # Returns: 12:03 PM
+    
+    add_time("10:10 PM", "3:30")
+    # Returns: 1:40 AM (next day)
+    
+    add_time("11:43 PM", "24:20", "tueSday")
+    # Returns: 12:03 AM, Thursday (2 days later)
 
-add_time("6:30 PM", "205:12")
-# Returns: 7:42 AM (9 days later)
+    add_time("6:30 PM", "205:12")
+    # Returns: 7:42 AM (9 days later)
 
-add_time("8:16 PM", "1199:02", "tuesday")
+    add_time("8:16 PM", "1199:02", "tuesday")
 
-add_time("10:30 AM", "39674:50", "WedNesDay")
+    add_time("10:30 AM", "39674:50", "WedNesDay")
 
-# return print(f"new time (unformatted) = {new_time_hour_in_24hr:02}:{new_time_minute:02}"+'\n'
-#     f"new time (formatted) = {new_time_hour}:{new_time_minute:02}{' PM' if (new_time_hour_in_24hr >= 12) else ' AM'}"+'\n'
-#     f"re-arranged days of the week = {'Null' if (day is None) else days_of_the_week_rearranged}"+'\n'
-#     f"number of days elapsed = {number_of_days_later}"+'\n'
-#     f"new day = {'Null' if (day is None) else new_day}"+'\n'
-#     f"{new_time_hour}:{new_time_minute:02}{' PM' if (new_time_hour_in_24hr >= 12) else ' AM'}{print_format}")
+    # return print(f"new time (unformatted) = {new_time_hour_in_24hr:02}:{new_time_minute:02}"+'\n'
+    #     f"new time (formatted) = {new_time_hour}:{new_time_minute:02}{' PM' if (new_time_hour_in_24hr >= 12) else ' AM'}"+'\n'
+    #     f"re-arranged days of the week = {'Null' if (day is None) else days_of_the_week_rearranged}"+'\n'
+    #     f"number of days elapsed = {number_of_days_later}"+'\n'
+    #     f"new day = {'Null' if (day is None) else new_day}"+'\n'
+    #     f"{new_time_hour}:{new_time_minute:02}{' PM' if (new_time_hour_in_24hr >= 12) else ' AM'}{print_format}")
 
-add_time("5:32 PM", "67:50", "thursday")
+    add_time("5:32 PM", "67:50", "thursday")
